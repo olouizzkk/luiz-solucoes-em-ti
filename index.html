@@ -21,13 +21,76 @@
     </nav>
   </header>
 
-  <!-- Seções anteriores (home, serviços, depoimentos, galeria, FAQ) permanecem iguais -->
+  <!-- Home -->
+  <section id="home" class="py-10 px-6 text-center">
+    <h2 class="text-3xl font-bold mb-4">Bem-vindo à Luiz Soluções em TI</h2>
+    <p class="text-lg mb-6">Especialistas em manutenção, montagem e consultoria em tecnologia</p>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10">
+      <img src="https://via.placeholder.com/200x150?text=Tecnico+1" class="w-full rounded shadow" alt="Técnico 1">
+      <img src="https://via.placeholder.com/200x150?text=Tecnico+2" class="w-full rounded shadow" alt="Técnico 2">
+      <img src="https://via.placeholder.com/200x150?text=Montagem+PC" class="w-full rounded shadow" alt="Montagem de PC">
+      <img src="https://via.placeholder.com/200x150?text=Limpeza+PC" class="w-full rounded shadow" alt="Limpeza de PC">
+    </div>
+  </section>
+
+  <!-- Serviços -->
+  <section id="servicos" class="py-16 px-6 bg-gray-100 text-center">
+    <h3 class="text-2xl font-bold mb-8">Nossos Serviços</h3>
+    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
+      <li><strong>Manutenção</strong> de computadores e notebooks</li>
+      <li><strong>Montagem e escolha</strong> de PC gamer</li>
+      <li><strong>Formatação, limpeza</strong> e upgrade de peças</li>
+      <li><strong>Aulas de informática</strong> para iniciantes e idosos</li>
+      <li><strong>Auxílio</strong> em transição de carreira com tecnologia</li>
+    </ul>
+  </section>
+
+  <!-- Depoimentos -->
+  <section id="depoimentos" class="py-16 px-6 bg-white text-center">
+    <h3 class="text-2xl font-bold mb-8">O que dizem nossos clientes</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="p-4 shadow rounded">
+        <img src="https://via.placeholder.com/100x100?text=Cliente+1" class="mx-auto rounded-full mb-4" alt="Cliente 1">
+        <p class="italic">"Meu computador ficou novinho em folha! Atendimento excelente e rápido."</p>
+        <p class="font-bold mt-2">Carlos M.</p>
+      </div>
+      <div class="p-4 shadow rounded">
+        <img src="https://via.placeholder.com/100x100?text=Cliente+2" class="mx-auto rounded-full mb-4" alt="Cliente 2">
+        <p class="italic">"A montagem do meu PC gamer ficou impecável. Recomendo de olhos fechados!"</p>
+        <p class="font-bold mt-2">Juliana S.</p>
+      </div>
+      <div class="p-4 shadow rounded">
+        <img src="https://via.placeholder.com/100x100?text=Cliente+3" class="mx-auto rounded-full mb-4" alt="Cliente 3">
+        <p class="italic">"As aulas de informática foram essenciais para minha nova carreira. Gratidão!"</p>
+        <p class="font-bold mt-2">Maria A.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-16 px-6 bg-gray-100">
+    <h3 class="text-2xl font-bold mb-6 text-center">Perguntas Frequentes</h3>
+    <div class="max-w-3xl mx-auto space-y-6">
+      <div>
+        <h4 class="font-semibold">Quanto tempo leva uma manutenção?</h4>
+        <p>Em geral, entre 24h a 48h dependendo do problema e das peças.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">Vocês ajudam na escolha de peças?</h4>
+        <p>Sim, oferecemos consultoria completa para montagem e upgrade.</p>
+      </div>
+      <div>
+        <h4 class="font-semibold">As aulas são presenciais ou online?</h4>
+        <p>Oferecemos as duas modalidades, de acordo com sua preferência.</p>
+      </div>
+    </div>
+  </section>
 
   <!-- Contato -->
-  <section id="contato" class="py-16 px-6 bg-blue-900 text-white text-center">
+  <section id="contato" class="py-8 px-6 bg-blue-900 text-white text-center">
     <h3 class="text-2xl font-bold mb-4">Entre em Contato</h3>
     <p class="mb-4">Fale comigo pelo WhatsApp ou envie uma mensagem pelo formulário abaixo:</p>
-    <a href="https://wa.me/seunumero" target="_blank" class="inline-block mb-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-300">Falar no WhatsApp</a>
+    <a href="https://wa.me/seunumero" target="_blank" class="inline-block mb-6 bg-yellow-400 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-300">Falar no WhatsApp</a>
 
     <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto text-left">
       <div class="mb-4">
