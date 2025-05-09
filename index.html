@@ -1,14 +1,4 @@
 <!-- HOME (Página Inicial) -->
-<!-- Menu de Navegação -->
-<nav class="bg-blue-900 text-white py-4">
-  <ul class="flex justify-center space-x-8">
-    <li><a href="#home" class="nav-link">Home</a></li>
-    <li><a href="#servicos" class="nav-link">Serviços</a></li>
-    <li><a href="#depoimentos" class="nav-link">Depoimentos</a></li>
-    <li><a href="#faq" class="nav-link">FAQ</a></li>
-  </ul>
-</nav>
-
 <section id="home" class="py-16 px-6 bg-white">
   <h1 class="text-4xl font-bold mb-4 text-center text-blue-900">Bem-vindo à Luiz Soluções em TI</h1>
   <p class="text-lg text-center text-gray-700 mb-8">Especialistas em manutenção de computadores, montagem de PCs gamers, aulas de informática e muito mais!</p>
@@ -21,11 +11,11 @@
 </section>
 
 <!-- SERVIÇOS -->
-<section id="servicos" class="py-16 px-6 bg-gray-50 hidden">
+<section id="servicos" class="py-16 px-6 bg-gray-50">
   <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Serviços</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
     <div class="bg-white p-6 rounded shadow">
-      <img src="" class="mb-4 rounded" alt="Formatação de computador">
+      <img src="https://t2.tudocdn.net/548998?w=1200&h=1200" class="mb-4 rounded" alt="Formatação de computador">
       <h4 class="text-xl font-semibold text-blue-800 mb-2">Formatação</h4>
       <p class="text-gray-700 mb-4">Deixe seu computador mais rápido com uma instalação limpa do sistema operacional.</p>
     </div>
@@ -38,7 +28,7 @@
 </section>
 
 <!-- DEPOIMENTOS -->
-<section id="depoimentos" class="py-16 px-6 bg-white hidden">
+<section id="depoimentos" class="py-16 px-6 bg-white">
   <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Depoimentos</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <div class="bg-gray-100 p-6 rounded-lg shadow">
@@ -72,7 +62,7 @@
 </section>
 
 <!-- FAQ -->
-<section id="faq" class="py-16 px-6 bg-gray-100 hidden">
+<section id="faq" class="py-16 px-6 bg-gray-100">
   <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Perguntas Frequentes (FAQ)</h3>
   <div class="max-w-4xl mx-auto space-y-6">
     <div>
@@ -100,16 +90,3 @@ document.getElementById('form-depoimento').addEventListener('submit', function (
   document.getElementById('mensagem-sucesso').classList.remove('hidden');
 });
 </script>
-<script>
-// Alternar entre seções ao clicar no menu
-document.querySelectorAll('.nav-link').forEach(link => {
-  link.addEventListener('click', function (e) {
-    e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    document.querySelectorAll('section').forEach(sec => sec.classList.add('hidden'));
-    target.classList.remove('hidden');
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-});
-</script>
-
