@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luiz Soluções em TI</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Cabeçalho -->
+  <header class="bg-blue-900 text-white p-4 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">Luiz Soluções em TI</h1>
+    <nav>
+      <ul class="flex space-x-4">
+        <li><a href="#home" class="hover:text-yellow-400">Início</a></li>
+        <li><a href="#servicos" class="hover:text-yellow-400">Serviços</a></li>
+        <li><a href="#depoimentos" class="hover:text-yellow-400">Depoimentos</a></li>
+        <li><a href="#faq" class="hover:text-yellow-400">FAQ</a></li>
+        <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Seções anteriores (home, serviços, depoimentos, galeria, FAQ) permanecem iguais -->
+
+  <!-- Contato -->
+  <section id="contato" class="py-16 px-6 bg-blue-900 text-white text-center">
+    <h3 class="text-2xl font-bold mb-4">Entre em Contato</h3>
+    <p class="mb-4">Fale comigo pelo WhatsApp ou envie uma mensagem pelo formulário abaixo:</p>
+    <a href="https://wa.me/seunumero" target="_blank" class="inline-block mb-8 bg-yellow-400 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-300">Falar no WhatsApp</a>
+
+    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto text-left">
+      <div class="mb-4">
+        <label class="block mb-2">Nome</label>
+        <input type="text" name="nome" class="w-full p-2 rounded text-black" required />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Email</label>
+        <input type="email" name="email" class="w-full p-2 rounded text-black" required />
+      </div>
+      <div class="mb-4">
+        <label class="block mb-2">Mensagem</label>
+        <textarea name="mensagem" rows="5" class="w-full p-2 rounded text-black" required></textarea>
+      </div>
+      <button type="submit" class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300">Enviar</button>
+    </form>
+  </section>
+
+  <!-- Botão flutuante WhatsApp -->
+  <a href="https://wa.me/seunumero" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5a9 9 0 1115.5 6.5L21 21l-4-2.5A9 9 0 013 10.5z" />
+    </svg>
+  </a>
+
+  <!-- Rodapé -->
+  <footer class="bg-black text-white text-center py-4">
+    <p>&copy; 2025 Luiz Soluções em TI. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Tawk.to Chat -->
+  <script type="text/javascript">
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function () {
+    var s1 = document.createElement("script"),
+      s0 = document.getElementsByTagName("script")[0];
+    s1.async = true;
+    s1.src = 'https://embed.tawk.to/SEU_ID_AQUI/1hXXXXX';
+    s1.charset = 'UTF-8';
+    s1.setAttribute('crossorigin', '*');
+    s0.parentNode.insertBefore(s1, s0);
+  })();
+  </script>
+</body>
+</html>
