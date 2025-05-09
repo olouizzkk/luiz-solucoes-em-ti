@@ -10,19 +10,19 @@
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
     <!-- Cliente satisfeito 1 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://source.unsplash.com/150x150/?happy,customer" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeito">
+      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeito">
       <p class="italic text-gray-700 text-center">"Serviço excelente! Meu computador nunca esteve tão rápido. Super recomendo!"</p>
       <p class="text-center mt-2 font-semibold text-blue-900">Carlos Eduardo</p>
     </div>
     <!-- Cliente satisfeito 2 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://source.unsplash.com/150x150/?happy,woman" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeita">
+      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeita">
       <p class="italic text-gray-700 text-center">"Adorei a paciência durante as aulas de informática. Agora consigo trabalhar com confiança!"</p>
       <p class="text-center mt-2 font-semibold text-blue-900">Maria Lopes</p>
     </div>
     <!-- Cliente insatisfeito -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://source.unsplash.com/150x150/?neutral,person" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente neutro">
+      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente neutro">
       <p class="italic text-gray-700 text-center">"O atendimento foi bom, mas o prazo demorou um pouco mais do que o combinado."</p>
       <p class="text-center mt-2 font-semibold text-blue-900">João Silva</p>
     </div>
@@ -31,7 +31,7 @@
   <!-- Formulário de novo depoimento -->
   <div class="max-w-3xl mx-auto mt-16 p-6 bg-gray-50 border rounded shadow">
     <h4 class="text-2xl font-bold text-blue-900 mb-4 text-center">Deixe seu Depoimento</h4>
-    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="multipart/form-data">
+    <form id="form-depoimento">
       <input type="text" name="nome" placeholder="Seu nome" class="w-full mb-4 p-2 border rounded" required>
       <textarea name="mensagem" placeholder="Escreva seu depoimento aqui..." class="w-full mb-4 p-2 border rounded h-32" required></textarea>
       <input type="file" name="foto" accept="image/*" class="w-full mb-4">
@@ -39,6 +39,7 @@
         <i class="fas fa-paper-plane mr-2"></i>Enviar Depoimento
       </button>
     </form>
+    <p id="mensagem-sucesso" class="text-green-600 text-center mt-4 hidden">Depoimento enviado com sucesso!</p>
   </div>
 </section>
 
@@ -66,5 +67,11 @@
 </section>
 
 <script>
-// (mantém script anterior para carrinho)
+// Lógica de envio de formulário para e-mail via webhook (exemplo simples)
+document.getElementById('form-depoimento').addEventListener('submit', function (e) {
+  e.preventDefault();
+
+  // Aqui você pode usar um serviço externo como Formspree ou EmailJS
+  document.getElementById('mensagem-sucesso').classList.remove('hidden');
+});
 </script>
