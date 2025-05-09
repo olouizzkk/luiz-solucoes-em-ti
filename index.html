@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Luiz Soluções em TI</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body class="bg-white text-gray-900">
   <!-- Cabeçalho -->
@@ -12,11 +13,11 @@
     <h1 class="text-2xl font-bold">Luiz Soluções em TI</h1>
     <nav>
       <ul class="flex space-x-4">
-        <li><a href="#home" class="hover:text-yellow-400">Início</a></li>
-        <li><a href="#servicos" class="hover:text-yellow-400">Serviços</a></li>
-        <li><a href="#depoimentos" class="hover:text-yellow-400">Depoimentos</a></li>
-        <li><a href="#faq" class="hover:text-yellow-400">FAQ</a></li>
-        <li><a href="#contato" class="hover:text-yellow-400">Contato</a></li>
+        <li><a href="#home" class="hover:text-yellow-400"><i class="fas fa-home mr-1"></i>Início</a></li>
+        <li><a href="#servicos" class="hover:text-yellow-400"><i class="fas fa-tools mr-1"></i>Serviços</a></li>
+        <li><a href="#depoimentos" class="hover:text-yellow-400"><i class="fas fa-comment-dots mr-1"></i>Depoimentos</a></li>
+        <li><a href="#faq" class="hover:text-yellow-400"><i class="fas fa-question-circle mr-1"></i>FAQ</a></li>
+        <li><a href="#contato" class="hover:text-yellow-400"><i class="fas fa-envelope mr-1"></i>Contato</a></li>
       </ul>
     </nav>
   </header>
@@ -26,94 +27,36 @@
     <h2 class="text-3xl font-bold mb-4">Bem-vindo à Luiz Soluções em TI</h2>
     <p class="text-lg mb-6">Especialistas em manutenção, montagem e consultoria em tecnologia</p>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-      <img src="https://via.placeholder.com/200x150?text=Tecnico+1" class="w-full rounded shadow" alt="Técnico 1">
-      <img src="https://via.placeholder.com/200x150?text=Tecnico+2" class="w-full rounded shadow" alt="Técnico 2">
-      <img src="https://via.placeholder.com/200x150?text=Montagem+PC" class="w-full rounded shadow" alt="Montagem de PC">
-      <img src="https://netshopinformatica.com.br/uploads/content_manager/contents/324/formatacao-e-limpeza-interna-notebook-ou-desktop-em-brasilia-netshop-informatica.jpg" class="w-full rounded shadow" alt="Limpeza de PC">
+      <img src="https://source.unsplash.com/400x300/?computer-repair" class="w-full h-40 object-cover rounded shadow" alt="Técnico 1">
+      <img src="https://source.unsplash.com/400x300/?pc-assembly" class="w-full h-40 object-cover rounded shadow" alt="Técnico 2">
+      <img src="https://source.unsplash.com/400x300/?pc-cleaning" class="w-full h-40 object-cover rounded shadow" alt="Montagem de PC">
+      <img src="https://source.unsplash.com/400x300/?tech-support" class="w-full h-40 object-cover rounded shadow" alt="Limpeza de PC">
     </div>
+    <a href="#contato" class="inline-block bg-blue-900 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"><i class="fas fa-paper-plane mr-2"></i>Entre em Contato</a>
   </section>
 
-  <!-- Serviços -->
-  <section id="servicos" class="py-16 px-6 bg-gray-100 text-center">
-    <h3 class="text-2xl font-bold mb-8">Nossos Serviços</h3>
-    <ul class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto text-left">
-      <li><strong>Manutenção</strong> de computadores e notebooks</li>
-      <li><strong>Montagem e escolha</strong> de PC gamer</li>
-      <li><strong>Formatação, limpeza</strong> e upgrade de peças</li>
-      <li><strong>Aulas de informática</strong> para iniciantes e idosos</li>
-      <li><strong>Auxílio</strong> em transição de carreira com tecnologia</li>
-    </ul>
-  </section>
-
-  <!-- Depoimentos -->
-  <section id="depoimentos" class="py-16 px-6 bg-white text-center">
-    <h3 class="text-2xl font-bold mb-8">O que dizem nossos clientes</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-      <div class="p-4 shadow rounded">
-        <img src="https://via.placeholder.com/100x100?text=Cliente+1" class="mx-auto rounded-full mb-4" alt="Cliente 1">
-        <p class="italic">"Meu computador ficou novinho em folha! Atendimento excelente e rápido."</p>
-        <p class="font-bold mt-2">Carlos M.</p>
+  <!-- Serviços Premium -->
+  <section id="servicos-premium" class="py-16 px-6 bg-white text-center">
+    <h3 class="text-2xl font-bold mb-8 text-blue-900">Serviços Premium</h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-gamepad mr-2"></i>Consultoria Gamer Personalizada</h4>
+        <p class="text-gray-700">Montamos o PC dos seus sonhos com foco em desempenho e custo-benefício. Ideal para gamers e streamers iniciantes.</p>
       </div>
-      <div class="p-4 shadow rounded">
-        <img src="https://via.placeholder.com/100x100?text=Cliente+2" class="mx-auto rounded-full mb-4" alt="Cliente 2">
-        <p class="italic">"A montagem do meu PC gamer ficou impecável. Recomendo de olhos fechados!"</p>
-        <p class="font-bold mt-2">Juliana S.</p>
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-chalkboard-teacher mr-2"></i>Plano de Aulas VIP</h4>
+        <p class="text-gray-700">Aulas personalizadas em horários flexíveis, com atendimento individual para acelerar seu aprendizado tecnológico.</p>
       </div>
-      <div class="p-4 shadow rounded">
-        <img src="https://via.placeholder.com/100x100?text=Cliente+3" class="mx-auto rounded-full mb-4" alt="Cliente 3">
-        <p class="italic">"As aulas de informática foram essenciais para minha nova carreira. Gratidão!"</p>
-        <p class="font-bold mt-2">Maria A.</p>
+      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
+        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-briefcase mr-2"></i>Suporte Residencial ou Empresarial</h4>
+        <p class="text-gray-700">Atendimento in loco para manutenção, rede, upgrades e otimizações de sistemas. Ideal para quem precisa de ajuda no local.</p>
       </div>
     </div>
-  </section>
-
-  <!-- FAQ -->
-  <section id="faq" class="py-16 px-6 bg-gray-100">
-    <h3 class="text-2xl font-bold mb-6 text-center">Perguntas Frequentes</h3>
-    <div class="max-w-3xl mx-auto space-y-6">
-      <div>
-        <h4 class="font-semibold">Quanto tempo leva uma manutenção?</h4>
-        <p>Em geral, entre 24h a 48h dependendo do problema e das peças.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">Vocês ajudam na escolha de peças?</h4>
-        <p>Sim, oferecemos consultoria completa para montagem e upgrade.</p>
-      </div>
-      <div>
-        <h4 class="font-semibold">As aulas são presenciais ou online?</h4>
-        <p>Oferecemos as duas modalidades, de acordo com sua preferência.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Contato -->
-  <section id="contato" class="py-8 px-6 bg-blue-900 text-white text-center">
-    <h3 class="text-2xl font-bold mb-4">Entre em Contato</h3>
-    <p class="mb-4">Fale comigo pelo WhatsApp ou envie uma mensagem pelo formulário abaixo:</p>
-    <a href="https://wa.me/seunumero" target="_blank" class="inline-block mb-6 bg-yellow-400 text-black font-semibold py-2 px-4 rounded-full hover:bg-yellow-300">Falar no WhatsApp</a>
-
-    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="text/plain" class="max-w-xl mx-auto text-left">
-      <div class="mb-4">
-        <label class="block mb-2">Nome</label>
-        <input type="text" name="nome" class="w-full p-2 rounded text-black" required />
-      </div>
-      <div class="mb-4">
-        <label class="block mb-2">Email</label>
-        <input type="email" name="email" class="w-full p-2 rounded text-black" required />
-      </div>
-      <div class="mb-4">
-        <label class="block mb-2">Mensagem</label>
-        <textarea name="mensagem" rows="5" class="w-full p-2 rounded text-black" required></textarea>
-      </div>
-      <button type="submit" class="bg-yellow-400 text-black font-semibold py-2 px-4 rounded hover:bg-yellow-300">Enviar</button>
-    </form>
   </section>
 
   <!-- Botão flutuante WhatsApp -->
   <a href="https://wa.me/seunumero" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
-    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10.5a9 9 0 1115.5 6.5L21 21l-4-2.5A9 9 0 013 10.5z" />
-    </svg>
+    <i class="fab fa-whatsapp fa-lg"></i>
   </a>
 
   <!-- Rodapé -->
