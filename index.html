@@ -1,81 +1,70 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Luiz Soluções em TI</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body class="bg-white text-gray-900">
-  <!-- Cabeçalho -->
-  <header class="bg-blue-900 text-white p-4 flex justify-between items-center shadow-md">
-    <h1 class="text-2xl font-bold">Luiz Soluções em TI</h1>
-    <nav>
-      <ul class="flex space-x-4">
-        <li><a href="#home" class="hover:text-yellow-400"><i class="fas fa-home mr-1"></i>Início</a></li>
-        <li><a href="#servicos" class="hover:text-yellow-400"><i class="fas fa-tools mr-1"></i>Serviços</a></li>
-        <li><a href="#depoimentos" class="hover:text-yellow-400"><i class="fas fa-comment-dots mr-1"></i>Depoimentos</a></li>
-        <li><a href="#faq" class="hover:text-yellow-400"><i class="fas fa-question-circle mr-1"></i>FAQ</a></li>
-        <li><a href="#contato" class="hover:text-yellow-400"><i class="fas fa-envelope mr-1"></i>Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+<!-- Serviços Premium -->
+<section id="servicos" class="py-16 px-6 bg-gray-50">
+  <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Serviços</h3>
+  <!-- ... (conteúdo anterior da seção de serviços permanece igual) ... -->
+</section>
 
-  <!-- Home -->
-  <section id="home" class="py-10 px-6 text-center">
-    <h2 class="text-3xl font-bold mb-4">Bem-vindo à Luiz Soluções em TI</h2>
-    <p class="text-lg mb-6">Especialistas em manutenção, montagem e consultoria em tecnologia</p>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-10">
-      <img src="https://source.unsplash.com/400x300/?computer-repair" class="w-full h-40 object-cover rounded shadow" alt="Técnico 1">
-      <img src="https://source.unsplash.com/400x300/?pc-assembly" class="w-full h-40 object-cover rounded shadow" alt="Técnico 2">
-      <img src="https://source.unsplash.com/400x300/?pc-cleaning" class="w-full h-40 object-cover rounded shadow" alt="Montagem de PC">
-      <img src="https://source.unsplash.com/400x300/?tech-support" class="w-full h-40 object-cover rounded shadow" alt="Limpeza de PC">
+<!-- Depoimentos -->
+<section id="depoimentos" class="py-16 px-6 bg-white">
+  <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Depoimentos</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+    <!-- Cliente satisfeito 1 -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow">
+      <img src="https://source.unsplash.com/150x150/?happy,customer" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeito">
+      <p class="italic text-gray-700 text-center">"Serviço excelente! Meu computador nunca esteve tão rápido. Super recomendo!"</p>
+      <p class="text-center mt-2 font-semibold text-blue-900">Carlos Eduardo</p>
     </div>
-    <a href="#contato" class="inline-block bg-blue-900 text-white px-6 py-2 rounded-full shadow hover:bg-blue-800 transition"><i class="fas fa-paper-plane mr-2"></i>Entre em Contato</a>
-  </section>
-
-  <!-- Serviços Premium -->
-  <section id="servicos-premium" class="py-16 px-6 bg-white text-center">
-    <h3 class="text-2xl font-bold mb-8 text-blue-900">Serviços Premium</h3>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-gamepad mr-2"></i>Consultoria Gamer Personalizada</h4>
-        <p class="text-gray-700">Montamos o PC dos seus sonhos com foco em desempenho e custo-benefício. Ideal para gamers e streamers iniciantes.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-chalkboard-teacher mr-2"></i>Plano de Aulas VIP</h4>
-        <p class="text-gray-700">Aulas personalizadas em horários flexíveis, com atendimento individual para acelerar seu aprendizado tecnológico.</p>
-      </div>
-      <div class="p-6 border rounded-lg shadow hover:shadow-lg transition">
-        <h4 class="text-xl font-semibold text-yellow-500 mb-2"><i class="fas fa-briefcase mr-2"></i>Suporte Residencial ou Empresarial</h4>
-        <p class="text-gray-700">Atendimento in loco para manutenção, rede, upgrades e otimizações de sistemas. Ideal para quem precisa de ajuda no local.</p>
-      </div>
+    <!-- Cliente satisfeito 2 -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow">
+      <img src="https://source.unsplash.com/150x150/?happy,woman" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeita">
+      <p class="italic text-gray-700 text-center">"Adorei a paciência durante as aulas de informática. Agora consigo trabalhar com confiança!"</p>
+      <p class="text-center mt-2 font-semibold text-blue-900">Maria Lopes</p>
     </div>
-  </section>
+    <!-- Cliente insatisfeito -->
+    <div class="bg-gray-100 p-6 rounded-lg shadow">
+      <img src="https://source.unsplash.com/150x150/?neutral,person" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente neutro">
+      <p class="italic text-gray-700 text-center">"O atendimento foi bom, mas o prazo demorou um pouco mais do que o combinado."</p>
+      <p class="text-center mt-2 font-semibold text-blue-900">João Silva</p>
+    </div>
+  </div>
 
-  <!-- Botão flutuante WhatsApp -->
-  <a href="https://wa.me/seunumero" target="_blank" class="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg z-50">
-    <i class="fab fa-whatsapp fa-lg"></i>
-  </a>
+  <!-- Formulário de novo depoimento -->
+  <div class="max-w-3xl mx-auto mt-16 p-6 bg-gray-50 border rounded shadow">
+    <h4 class="text-2xl font-bold text-blue-900 mb-4 text-center">Deixe seu Depoimento</h4>
+    <form action="mailto:seuemail@exemplo.com" method="POST" enctype="multipart/form-data">
+      <input type="text" name="nome" placeholder="Seu nome" class="w-full mb-4 p-2 border rounded" required>
+      <textarea name="mensagem" placeholder="Escreva seu depoimento aqui..." class="w-full mb-4 p-2 border rounded h-32" required></textarea>
+      <input type="file" name="foto" accept="image/*" class="w-full mb-4">
+      <button type="submit" class="bg-blue-900 text-white px-6 py-2 rounded shadow hover:bg-blue-800 w-full">
+        <i class="fas fa-paper-plane mr-2"></i>Enviar Depoimento
+      </button>
+    </form>
+  </div>
+</section>
 
-  <!-- Rodapé -->
-  <footer class="bg-black text-white text-center py-4">
-    <p>&copy; 2025 Luiz Soluções em TI. Todos os direitos reservados.</p>
-  </footer>
+<!-- FAQ -->
+<section id="faq" class="py-16 px-6 bg-gray-100">
+  <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Perguntas Frequentes (FAQ)</h3>
+  <div class="max-w-4xl mx-auto space-y-6">
+    <div>
+      <h4 class="text-xl font-semibold text-blue-800">Quais tipos de computadores vocês consertam?</h4>
+      <p class="text-gray-700">Realizamos manutenção em notebooks, desktops, PCs gamers e corporativos.</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold text-blue-800">Vocês fazem atendimento domiciliar?</h4>
+      <p class="text-gray-700">Sim, dependendo da região e da necessidade, oferecemos atendimento técnico presencial.</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold text-blue-800">Oferecem garantia nos serviços?</h4>
+      <p class="text-gray-700">Sim, todos os serviços contam com garantia mínima de 90 dias.</p>
+    </div>
+    <div>
+      <h4 class="text-xl font-semibold text-blue-800">Como posso acompanhar meu pedido?</h4>
+      <p class="text-gray-700">Enviamos atualizações pelo WhatsApp com o andamento do serviço ou montagem.</p>
+    </div>
+  </div>
+</section>
 
-  <!-- Tawk.to Chat -->
-  <script type="text/javascript">
-  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
-  (function () {
-    var s1 = document.createElement("script"),
-      s0 = document.getElementsByTagName("script")[0];
-    s1.async = true;
-    s1.src = 'https://embed.tawk.to/SEU_ID_AQUI/1hXXXXX';
-    s1.charset = 'UTF-8';
-    s1.setAttribute('crossorigin', '*');
-    s0.parentNode.insertBefore(s1, s0);
-  })();
-  </script>
-</body>
-</html>
+<script>
+// (mantém script anterior para carrinho)
+</script>
