@@ -1,34 +1,52 @@
-<!-- Serviços Premium -->
-<section id="servicos" class="py-16 px-6 bg-gray-50">
-  <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Serviços</h3>
-  <!-- ... (conteúdo anterior da seção de serviços permanece igual) ... -->
+<!-- HOME (Página Inicial) -->
+<section id="home" class="py-16 px-6 bg-white">
+  <h1 class="text-4xl font-bold mb-4 text-center text-blue-900">Bem-vindo à Luiz Soluções em TI</h1>
+  <p class="text-lg text-center text-gray-700 mb-8">Especialistas em manutenção de computadores, montagem de PCs gamers, aulas de informática e muito mais!</p>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 max-w-6xl mx-auto">
+    <img src="https://www.hardware.com.br/static/wp/2022/03/limpeza-pc-1.jpg" alt="Manutenção" class="rounded shadow">
+    <img src="https://www.oficinadanet.com.br/imagens/post/34904/monte-pc-gamer-2022-capa.jpg" alt="Montagem de PC Gamer" class="rounded shadow">
+    <img src="https://blog.solides.com.br/wp-content/uploads/2023/04/aula-informatica.png" alt="Aulas de Informática" class="rounded shadow">
+    <img src="https://c.pxhere.com/photos/91/48/repair_laptop_computer_tools_fix_technology_equipment_maintenance-1053513.jpg!d" alt="Limpeza de Equipamentos" class="rounded shadow">
+  </div>
 </section>
 
-<!-- Depoimentos -->
+<!-- SERVIÇOS -->
+<section id="servicos" class="py-16 px-6 bg-gray-50">
+  <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Serviços</h3>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+    <div class="bg-white p-6 rounded shadow">
+      <img src="https://t2.tudocdn.net/548998?w=1200&h=1200" class="mb-4 rounded" alt="Formatação de computador">
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">Formatação</h4>
+      <p class="text-gray-700 mb-4">Deixe seu computador mais rápido com uma instalação limpa do sistema operacional.</p>
+    </div>
+    <div class="bg-white p-6 rounded shadow">
+      <img src="https://cdn.awsli.com.br/600x700/1009/1009648/produto/58069356e871753943.jpg" class="mb-4 rounded" alt="Upgrade de Peças">
+      <h4 class="text-xl font-semibold text-blue-800 mb-2">Upgrade de Peças</h4>
+      <p class="text-gray-700 mb-4">Melhore o desempenho do seu equipamento com peças novas e compatíveis.</p>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
 <section id="depoimentos" class="py-16 px-6 bg-white">
   <h3 class="text-3xl font-bold mb-10 text-blue-900 text-center">Depoimentos</h3>
   <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-    <!-- Cliente satisfeito 1 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeito">
+      <img src="https://i.imgur.com/bR9r96g.jpg" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeito">
       <p class="italic text-gray-700 text-center">"Serviço excelente! Meu computador nunca esteve tão rápido. Super recomendo!"</p>
       <p class="text-center mt-2 font-semibold text-blue-900">Carlos Eduardo</p>
     </div>
-    <!-- Cliente satisfeito 2 -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeita">
+      <img src="https://i.imgur.com/5yO2rnk.jpg" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente satisfeita">
       <p class="italic text-gray-700 text-center">"Adorei a paciência durante as aulas de informática. Agora consigo trabalhar com confiança!"</p>
       <p class="text-center mt-2 font-semibold text-blue-900">Maria Lopes</p>
     </div>
-    <!-- Cliente insatisfeito -->
     <div class="bg-gray-100 p-6 rounded-lg shadow">
-      <img src="https://via.placeholder.com/150" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente neutro">
+      <img src="https://i.imgur.com/3OcI1sI.jpg" class="w-20 h-20 rounded-full mx-auto mb-4" alt="Cliente neutro">
       <p class="italic text-gray-700 text-center">"O atendimento foi bom, mas o prazo demorou um pouco mais do que o combinado."</p>
       <p class="text-center mt-2 font-semibold text-blue-900">João Silva</p>
     </div>
   </div>
-
-  <!-- Formulário de novo depoimento -->
   <div class="max-w-3xl mx-auto mt-16 p-6 bg-gray-50 border rounded shadow">
     <h4 class="text-2xl font-bold text-blue-900 mb-4 text-center">Deixe seu Depoimento</h4>
     <form id="form-depoimento">
@@ -67,11 +85,9 @@
 </section>
 
 <script>
-// Lógica de envio de formulário para e-mail via webhook (exemplo simples)
 document.getElementById('form-depoimento').addEventListener('submit', function (e) {
   e.preventDefault();
-
-  // Aqui você pode usar um serviço externo como Formspree ou EmailJS
   document.getElementById('mensagem-sucesso').classList.remove('hidden');
 });
 </script>
+
